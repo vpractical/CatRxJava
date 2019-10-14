@@ -19,7 +19,6 @@ public abstract class Observable<T> {
         return new ObservableMap<>(this,function);
     }
 
-
     public Observable<T> subscribeOn(ThreadScheduler scheduler){
         return new ObservableSubscribeOn<>(this,scheduler);
     }
